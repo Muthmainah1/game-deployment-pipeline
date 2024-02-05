@@ -40,7 +40,7 @@ h1 {
 .card {
     width: 211.8px;
     height: 166.2px;
-    background-color: #43a047; /* Warna hijau sebelum kartu dibuka */
+    background-color: #a3d2a1; /* Warna hijau sebelum kartu dibuka */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
