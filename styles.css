@@ -60,8 +60,10 @@ h1 {
 
 .card img {
     width: 100%;
-    height: auto;
-    visibility: hidden; /* Hide images by default */
+    height: 100%;
+    object-fit: cover; /* Menjaga aspek ratio dan memenuhi ukuran container */
+    object-position: center; /* Pusatkan gambar di dalam container */
+    visibility: hidden;
     display: block;
 }
 
