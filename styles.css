@@ -72,11 +72,11 @@ h1 {
 #start-game {
     background-color: #000; /* Warna hitam pada tombol start */
     color: #fff; /* Warna teks putih */
-    padding: 12px 24px;
+    padding: 18px 36px; /* Perbesar padding untuk memperbesar kotak */
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Perbesar radius border untuk memperbesar kotak */
     cursor: pointer;
-    font-size: 18px;
+    font-size: 24px; /* Perbesar ukuran font */
     transition: background-color 0.3s, transform 0.3s;
 }
 
