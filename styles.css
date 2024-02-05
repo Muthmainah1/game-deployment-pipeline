@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .container {
     width: auto;
     margin: 40px auto;
@@ -16,26 +15,21 @@ body {
     border-radius: 15px; 
     color: #333; /* Warna teks gelap */
 }
-
 h1 {
     font-size: 36px; /* Perbesar tulisan judul */
     color: #333; /* Warna teks gelap */
 }
-
 .instructions {
     font-size: 24px; /* Perbesar tulisan instruksi */
     margin-bottom: 30px;
     color: #333; /* Warna teks gelap */
 }
-
 #timer {
     font-size: 24px; /* Perbesar tulisan Time */
 }
-
 #score {
     font-size: 24px; /* Perbesar tulisan Score */
 }
-
 #game-board {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -44,10 +38,9 @@ h1 {
     justify-content: center;
     padding: 20px;
 }
-
 .card {
-    width: 150px; /* Ukuran kartu yang sama untuk semua gambar */
-    height: 150px; /* Ukuran kartu yang sama untuk semua gambar */
+    width: 211.8px;
+    height: 166.2px;
     background-color: #a3d2a1; /* Warna hijau muda sebelum kartu dibuka */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -57,25 +50,25 @@ h1 {
     justify-content: center;
     overflow: hidden;
 }
-
 .card img {
     width: 100%;
     height: auto;
     visibility: hidden; /* Hide images by default */
     display: block;
 }
-
 .card.show img {
     visibility: visible; /* Show image when card is flipped */
 }
-
 #start-game {
     background-color: #000; /* Warna hitam pada tombol start */
     color: #fff; /* Warna teks putih */
+    padding: 12px 24px;
     padding: 18px 36px; /* Perbesar padding untuk memperbesar kotak */
     border: none;
+    border-radius: 5px;
     border-radius: 8px; /* Perbesar radius border untuk memperbesar kotak */
     cursor: pointer;
+    font-size: 18px;
     font-size: 24px; /* Perbesar ukuran font */
     transition: background-color 0.3s, transform 0.3s;
 }
