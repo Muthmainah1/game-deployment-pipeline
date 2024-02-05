@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('#game-board');
     const startButton = document.getElementById('start-game');
     const timerElement = document.getElementById('timer');
+    const scoreElement = document.getElementById('score');
     let cardsChosen = [];
     let cardsChosenId = [];
     let cardsWon = [];
@@ -54,9 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(timerInterval);
     }
 
-    function updateScore() {
-        score = 0;
-        document.getElementById('score').innerText = 'Score: ' + score;
+    function updateScore(points = 0) {
+        score += points;
+        scoreElement.innerText = 'Score: ' + score;
     }
 
     function flipCard() {
@@ -82,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[firstCardId].removeEventListener('click', flipCard);
             cards[secondCardId].removeEventListener('click', flipCard);
             cardsWon.push(cardsChosen);
-            updateScore();
+            updateScore(5); // Update skor dengan menambah 5 poin
         } else {
             cards[firstCardId].setAttribute('src', 'images/blank.png');
             cards[secondCardId].setAttribute('src', 'images/blank.png');
