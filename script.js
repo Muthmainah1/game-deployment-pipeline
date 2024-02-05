@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('#game-board');
     const startButton = document.getElementById('start-game');
+    const timerElement = document.getElementById('timer');
     let cardsChosen = [];
     let cardsChosenId = [];
     let cardsWon = [];
@@ -30,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         shuffle(cardArray);
         grid.innerHTML = '';
         cardsWon = [];
-        startTimer(); // Start the timer
-        updateScore(); // Reset the score
+        startTimer();
+        updateScore();
 
         for (let i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img');
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function startTimer() {
         timerInterval = setInterval(function() {
             timerSeconds++;
+            timerElement.innerText = 'Time: ' + timerSeconds + 's';
         }, 1000);
     }
 
@@ -54,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateScore() {
         score = 0;
+        document.getElementById('score').innerText = 'Score: ' + score;
     }
 
     function flipCard() {
@@ -79,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[firstCardId].removeEventListener('click', flipCard);
             cards[secondCardId].removeEventListener('click', flipCard);
             cardsWon.push(cardsChosen);
-            updateScore(); // Update the score on successful match
+            updateScore();
         } else {
             cards[firstCardId].setAttribute('src', 'images/blank.png');
             cards[secondCardId].setAttribute('src', 'images/blank.png');
@@ -89,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosenId = [];
 
         if (cardsWon.length === cardArray.length / 2) {
-            stopTimer(); // Stop the timer when the game is complete
+            stopTimer();
             alert('Congratulations! You found them all!\nTime: ' + timerSeconds + 's\nScore: ' + score);
         }
     }
