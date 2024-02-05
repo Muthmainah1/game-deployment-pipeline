@@ -28,6 +28,14 @@ h1 {
     color: #333; /* Warna teks gelap */
 }
 
+#timer {
+    font-size: 24px; /* Perbesar tulisan Time */
+}
+
+#score {
+    font-size: 24px; /* Perbesar tulisan Score */
+}
+
 #game-board {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -40,7 +48,7 @@ h1 {
 .card {
     width: 211.8px;
     height: 166.2px;
-    background-color: #a3d2a1; /* Warna hijau sebelum kartu dibuka */
+    background-color: #a3d2a1; /* Warna hijau muda sebelum kartu dibuka */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -76,5 +84,3 @@ h1 {
     background-color: #333; /* Warna hitam yang lebih gelap pada hover */
     transform: scale(1.05); /* Memperbesar sedikit pada hover */
 }
-
-
