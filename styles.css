@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif; 
-    background-color: #282c34; 
-    color: #ffffff; 
+    background-color: #f0f0f0; /* Change to pastel color */
+    color: #333; 
     text-align: center;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     width: auto;
     margin: 40px auto;
     padding: 30px;
-    background-color: #3c404d; 
+    background-color: #e0e0e0; /* Change to pastel color */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
     border-radius: 15px; 
 }
