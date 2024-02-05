@@ -62,7 +62,7 @@ h1 {
 }
 
 #start-game {
-    background-color: #4caf50; /* Hijau pada tombol start */
+    background-color: #e91e63; /* Warna pink tua pada tombol start */
     color: #333; /* Warna teks gelap */
     padding: 12px 24px;
     border: none;
@@ -73,6 +73,7 @@ h1 {
 }
 
 #start-game:hover {
-    background-color: #43a047; /* Hijau yang lebih gelap pada hover */
+    background-color: #c2185b; /* Pink tua yang lebih gelap pada hover */
     transform: scale(1.05); /* Memperbesar sedikit pada hover */
 }
+
