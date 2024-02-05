@@ -46,8 +46,8 @@ h1 {
 }
 
 .card {
-    width: 211.8px;
-    height: 166.2px;
+    width: 150px; /* Ukuran kartu yang sama untuk semua gambar */
+    height: 150px; /* Ukuran kartu yang sama untuk semua gambar */
     background-color: #a3d2a1; /* Warna hijau muda sebelum kartu dibuka */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -60,10 +60,8 @@ h1 {
 
 .card img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Menjaga aspek ratio dan memenuhi ukuran container */
-    object-position: center; /* Pusatkan gambar di dalam container */
-    visibility: hidden;
+    height: auto;
+    visibility: hidden; /* Hide images by default */
     display: block;
 }
 
