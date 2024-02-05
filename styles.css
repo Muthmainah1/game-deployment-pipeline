@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif; 
-    background-color: #f0f0f0; /* Change to pastel color */
+    background-color: #f0f0f0; /* Warna latar belakang umum (dapat Anda ubah) */
     color: #333; 
     text-align: center;
     margin: 0;
@@ -11,7 +11,7 @@ body {
     width: auto;
     margin: 40px auto;
     padding: 30px;
-    background-color: #e0e0e0; /* Change to pastel color */
+    background-color: #ffc0cb; /* Pink muda */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
     border-radius: 15px; 
 }
@@ -60,7 +60,7 @@ h1 {
 }
 
 #start-game {
-    background-color: #4caf50;
+    background-color: #4caf50; /* Hijau */
     color: white;
     padding: 12px 24px;
     border: none;
@@ -71,6 +71,6 @@ h1 {
 }
 
 #start-game:hover {
-    background-color: #43a047; /* Darker on hover */
-    transform: scale(1.05); /* Slightly enlarges on hover */
+    background-color: #43a047; /* Hijau yang lebih gelap pada hover */
+    transform: scale(1.05); /* Memperbesar sedikit pada hover */
 }
